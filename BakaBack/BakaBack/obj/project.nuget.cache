@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7iFtpKF664+67d/O0blk98Lj607g1WV+OZsuv5JSMAoK0PwI+10jEq6Oa254yW2iqavavyX0CvS2ahem64SveQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Guillaume\\Desktop\\Année-2-ingénieur\\tests\\Projet_BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Guillaume\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Guillaume\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Guillaume\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Guillaume\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Guillaume\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Guillaume\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
