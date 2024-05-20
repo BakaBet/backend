@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guillaume\\Desktop\\Année-2-ingénieur\\tests\\Projet_BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj": {}
+    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guillaume\\Desktop\\Année-2-ingénieur\\tests\\Projet_BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj": {
+    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guillaume\\Desktop\\Année-2-ingénieur\\tests\\Projet_BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
         "projectName": "BakaBack",
-        "projectPath": "C:\\Users\\Guillaume\\Desktop\\Année-2-ingénieur\\tests\\Projet_BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
-        "packagesPath": "C:\\Users\\Guillaume\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guillaume\\Desktop\\Année-2-ingénieur\\tests\\Projet_BakaBet\\backend\\BakaBack\\BakaBack\\obj\\",
+        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+        "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Guillaume\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\duver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -69,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BakaBackTests
-build_property.ProjectDir = C:\Users\Guillaume\Desktop\Année-2-ingénieur\tests\Projet_BakaBet\backend\BakaBack\BakaBackTests\
+build_property.ProjectDir = C:\Users\duver\Desktop\BakaBet\backend\BakaBack\BakaBackTests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

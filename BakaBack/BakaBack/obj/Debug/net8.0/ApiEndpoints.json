@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "BakaBack.Controllers.LifeBetController",
+    "Method": "GetAllLifeBets",
+    "RelativePath": "LifeBet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BakaBack.Controllers.LifeBetController",
+    "Method": "CreateLifeBet",
+    "RelativePath": "LifeBet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lifeBet",
+        "Type": "BakaBack.Models.LifeBet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BakaBack.Controllers.LifeBetController",
+    "Method": "GetLifeBet",
+    "RelativePath": "LifeBet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BakaBack.Controllers.LifeBetController",
+    "Method": "UpdateLifeBet",
+    "RelativePath": "LifeBet/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lifeBet",
+        "Type": "BakaBack.Models.LifeBet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BakaBack.Controllers.LifeBetController",
+    "Method": "DeleteLifeBet",
+    "RelativePath": "LifeBet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
