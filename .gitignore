@@ -99,3 +99,22 @@ StyleCopReport.xml
 
 # Chutzpah Test files
 _Chutzpah*
+/BakaBack/BakaBack/obj/Debug/net8.0/BakaBack.AssemblyInfo.cs
+/BakaBack/BakaBack/obj/Debug/net8.0/BakaBack.AssemblyInfoInputs.cache
+/BakaBack/BakaBack/obj/Debug/net8.0/BakaBack.assets.cache
+/BakaBack/BakaBack/obj/Debug/net8.0/BakaBack.csproj.AssemblyReference.cache
+/BakaBack/BakaBack/obj/Debug/net8.0/BakaBack.GeneratedMSBuildEditorConfig.editorconfig
+/BakaBack/BakaBack/obj/BakaBack.csproj.nuget.dgspec.json
+/BakaBack/BakaBackTests/bin/Debug/net8.0/CoverletSourceRootsMapping_BakaBackTests
+/BakaBack/BakaBackTests/obj/Debug/net8.0/BakaBackTests.AssemblyInfo.cs
+/BakaBack/BakaBackTests/obj/Debug/net8.0/BakaBackTests.AssemblyInfoInputs.cache
+/BakaBack/BakaBackTests/obj/Debug/net8.0/BakaBackTests.assets.cache
+/BakaBack/BakaBackTests/obj/Debug/net8.0/BakaBackTests.csproj.AssemblyReference.cache
+/BakaBack/BakaBackTests/obj/Debug/net8.0/BakaBackTests.GeneratedMSBuildEditorConfig.editorconfig
+/BakaBack/BakaBackTests/obj/BakaBackTests.csproj.nuget.dgspec.json
+/BakaBack/BakaBackTests/obj/BakaBackTests.csproj.nuget.g.props
+/BakaBack/BakaBackTests/obj/project.assets.json
+/BakaBack/BakaBackTests/obj/project.nuget.cache
+/BakaBack/BakaBack/obj/BakaBack.csproj.nuget.g.props
+/BakaBack/BakaBack/obj/project.assets.json
+/BakaBack/BakaBack/obj/project.nuget.cache
