@@ -10,9 +10,9 @@ namespace BakaBack.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<LifeBet>> GetAllLifeBets()
-        {
-            return await _context.LifeBets.ToListAsync();
-        }
+        //public async Task<IEnumerable<LifeBet>> GetAllLifeBets()
+        //{
+        //    return await _context.LifeBets.ToListAsync();
+        //}
     }
 }
