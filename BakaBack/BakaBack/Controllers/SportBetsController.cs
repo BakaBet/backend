@@ -8,10 +8,12 @@ namespace BakaBack.Controllers
     public class SportBetsController : ControllerBase
     {
         private readonly SportsBetRepository _repository;
+        private readonly UserService _userService;
 
-        public SportBetsController(SportsBetRepository repository)
+        public SportBetsController(SportsBetRepository repository, UserService userService)
         {
             _repository = repository;
+            _userService = userService;
         }
 
         [HttpGet]
@@ -69,5 +71,14 @@ namespace BakaBack.Controllers
             await _repository.DeleteMatchAsync(id);
             return NoContent();
         }
+
+        // Action pour récupérer les paris d'un utilisateur en fonction de son ID
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetBetsByUserId(string userId)
+        {
+            var bets = await _userService.GetBetsByUserAsync(userId);
+            return Ok(bets);
+        }
+
     }
 }
