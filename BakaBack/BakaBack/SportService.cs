@@ -1,53 +1,63 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using BakaBack.Models;
+using Newtonsoft.Json.Linq;
 
 namespace BakaBack
 {
     public class SportsOddsService
     {
+        private readonly HttpClient _client;
         private readonly string _apiKey;
         private readonly Dictionary<string, string> _endpoints;
-        private HttpClient client = new HttpClient();
+        private readonly SportsDbContext _dbContext;
+        private readonly string _startURI;
 
-        private string startURI = "https://api.the-odds-api.com/v4/sports/";
-        private static readonly string apiKey = "62a9e964acb1b087bfc057fe3f07947d";
-
-        public SportsOddsService()
+        public SportsOddsService(IConfiguration config, HttpClient client, SportsDbContext dbContext)
         {
+            _client = client;
+            _apiKey = config["SportsOddsApi:ApiKey"];
+            _dbContext = dbContext;
+            _startURI = "https://api.the-odds-api.com/v4/sports/";
+
             _endpoints = new Dictionary<string, string>
             {
-                { "Ligue1", startURI+"soccer_france_ligue_one/odds/" },
-                { "PremierLeague", startURI+"soccer_epl/odds/" },
-                { "LaLiga", startURI+"soccer_spain_la_liga/odds/" },
-                { "Bundesliga", startURI+ "soccer_germany_bundesliga/odds/" },
-                { "NBA", startURI+"basketball_nba/odds/" },
-                { "EuroLeague", startURI+"basketball_euroleague/odds/" },
-                { "ATP", startURI+"tennis_atp/odds/" },
-                { "WTA", startURI+"tennis_wta/odds/" },
-                { "MLB", startURI+"baseball_mlb/odds/" },
-                { "NHL", startURI+"icehockey_nhl/odds/" },
-                { "NRL", startURI+"rugby_league_nrl/odds/" },
-                { "SixNations", startURI+"rugby_union_six_nations/odds/" },
-                { "NFL", startURI+"americanfootball_nfl/odds/" },
+               //{ "Ligue1", _startURI+"soccer_france_ligue_one/odds/" },
+               //{ "PremierLeague", _startURI+"soccer_epl/odds/" },
+               //{ "LaLiga", _startURI+"soccer_spain_la_liga/odds/" },
+               //{ "Bundesliga", _startURI+ "soccer_germany_bundesliga/odds/" },
+               //{ "NBA", _startURI+"basketball_nba/odds/" },
+               //{ "EuroLeague", _startURI+"basketball_euroleague/odds/" },
+               //{ "ATP", _startURI+"tennis_atp/odds/" },
+               //{ "WTA", _startURI+"tennis_wta/odds/" },
+               //{ "MLB", _startURI+"baseball_mlb/odds/" },
+               //{ "NHL", _startURI+"icehockey_nhl/odds/" },
+               //{ "NRL", _startURI+"rugby_league_nrl/odds/" },
+               //{ "SixNations", _startURI+"rugby_union_six_nations/odds/" },
+               { "NFL", _startURI+"americanfootball_nfl/odds/" },
             };
         }
 
-        public string CreateURI(string sportKey)
+        public async Task GetAndSaveMatchesAsync()
         {
-            if (!_endpoints.ContainsKey(sportKey))
-                throw new ArgumentException("Invalid sport key");
+            foreach (var endpoint in _endpoints)
+            {
+                var requestUrl = $"{endpoint.Value}?apiKey={_apiKey}&regions=eu&markets=h2h";
 
-            string endpoint = _endpoints[sportKey];
-            string requestUrl = $"{startURI}{endpoint}?apiKey={_apiKey}&regions=eu&markets=h2h";
+                var response = await _client.GetAsync(requestUrl);
+                response.EnsureSuccessStatusCode();
+                var responseBody = await response.Content.ReadAsStringAsync();
+                var matches = JArray.Parse(responseBody);
 
-            return requestUrl;
-        }
+                foreach (var match in matches)
+                {
+                    var newMatch = new Match
+                    {
+                        // Assignez les propriétés du match à partir des données
+                    };
 
-        public async Task<JArray> GetOddsAsync(string sportKey)
-        {
-            HttpResponseMessage response = await client.GetAsync(CreateURI(sportKey));
-            response.EnsureSuccessStatusCode();
-            string responseBody = await response.Content.ReadAsStringAsync();
-            return JArray.Parse(responseBody);
+                    _dbContext.Matches.Add(newMatch);
+                }
+                await _dbContext.SaveChangesAsync();
+            }
         }
     }
 }

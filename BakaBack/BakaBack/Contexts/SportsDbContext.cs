@@ -1,16 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BakaBack.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class SportsDbContext : DbContext
 {
+    public SportsDbContext(DbContextOptions<SportsDbContext> options): base(options)
+    {
+
+    }
+
     public DbSet<Match> Matches { get; set; }
     public DbSet<Bookmaker> Bookmakers { get; set; }
     public DbSet<Market> Markets { get; set; }
     public DbSet<Outcome> Outcomes { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlite("your_connection_string_here.db");
-    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
