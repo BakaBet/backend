@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\controllers\\sportbetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\controllers\\sportbetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,6 +14,46 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\repositories\\sportsbetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\repositories\\sportsbetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\models\\outcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\models\\outcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\controllers\\sportbetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\controllers\\sportbetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\contexts\\sportsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\contexts\\sportsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\migrations\\sportsdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\migrations\\sportsdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\migrations\\20240521201642_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\migrations\\20240521201642_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\sportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\sportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,6 +143,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "SportBetsController.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Controllers\\SportBetsController.cs",
@@ -111,10 +153,22 @@
               "ViewState": "AQIAADEAAAAAAAAAAAAcwFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T16:46:35.255Z",
+=======
+              "DocumentIndex": 7,
+              "Title": "20240521201642_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Migrations\\20240521201642_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Migrations\\20240521201642_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Migrations\\20240521201642_InitialCreate.Designer.cs",
+              "RelativeToolTip": "BakaBack\\Migrations\\20240521201642_InitialCreate.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:46:39.001Z",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "BakaBack.http",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\BakaBack.http",
@@ -124,10 +178,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2024-05-21T19:08:55.789Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "Outcome.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Models\\Outcome.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Outcome.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Models\\Outcome.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Outcome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:33:26.261Z",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "SportsBetsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Repositories\\SportsBetsRepository.cs",
@@ -135,12 +201,22 @@
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Repositories\\SportsBetsRepository.cs",
               "RelativeToolTip": "BakaBack\\Repositories\\SportsBetsRepository.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAwwB8AAAAoAAAA",
+=======
+              "DocumentIndex": 0,
+              "Title": "SportsBetRepository.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Repositories\\SportsBetRepository.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Repositories\\SportsBetRepository.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Repositories\\SportsBetRepository.cs",
+              "RelativeToolTip": "BakaBack\\Repositories\\SportsBetRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T16:35:03.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\UserService.cs",
@@ -148,12 +224,35 @@
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\UserService.cs",
               "RelativeToolTip": "BakaBack\\UserService.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAIwDYAAAAzAAAA",
+=======
+              "DocumentIndex": 6,
+              "Title": "SportsDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Migrations\\SportsDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Migrations\\SportsDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Migrations\\SportsDbContextModelSnapshot.cs",
+              "RelativeToolTip": "BakaBack\\Migrations\\SportsDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:46:58.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Program.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Program.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Program.cs",
+              "RelativeToolTip": "BakaBack\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T20:29:28.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "SportsDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Contexts\\SportsDbContext.cs",
@@ -161,6 +260,15 @@
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Contexts\\SportsDbContext.cs",
               "RelativeToolTip": "BakaBack\\Contexts\\SportsDbContext.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAA3wAsAAAAyAAAA",
+=======
+              "DocumentIndex": 4,
+              "Title": "SportsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Contexts\\SportsDbContext.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Contexts\\SportsDbContext.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Contexts\\SportsDbContext.cs",
+              "RelativeToolTip": "BakaBack\\Contexts\\SportsDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAbAAAA",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T16:30:08.135Z",
               "EditorCaption": ""
@@ -168,6 +276,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Contexts\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BakaBack\\Contexts\\ApplicationDbContext.cs",
@@ -265,12 +374,21 @@
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Match.cs",
               "RelativeToolTip": "BakaBack\\Models\\Match.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+=======
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Models\\Match.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Match.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T16:32:30.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 13,
               "Title": "Bookmaker.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Bookmaker.cs",
@@ -306,11 +424,78 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-07T13:05:22.938Z",
+=======
+              "DocumentIndex": 3,
+              "Title": "SportBetsController.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Controllers\\SportBetsController.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Controllers\\SportBetsController.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\Controllers\\SportBetsController.cs",
+              "RelativeToolTip": "BakaBack\\Controllers\\SportBetsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:46:35.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\appsettings.json",
+              "RelativeDocumentMoniker": "BakaBack\\appsettings.json",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\appsettings.json",
+              "RelativeToolTip": "BakaBack\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-07T13:05:22.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SportService.cs",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\SportService.cs",
+              "RelativeDocumentMoniker": "BakaBack\\SportService.cs",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\SportService.cs",
+              "RelativeToolTip": "BakaBack\\SportService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:39:15.36Z",
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 16,
+=======
+              "DocumentIndex": 10,
+              "Title": "BakaBack.csproj",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+              "RelativeDocumentMoniker": "BakaBack\\BakaBack.csproj",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+              "RelativeToolTip": "BakaBack\\BakaBack.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-07T07:52:40.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BakaBackTests.csproj",
+              "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBackTests\\BakaBackTests.csproj",
+              "RelativeDocumentMoniker": "BakaBackTests\\BakaBackTests.csproj",
+              "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBackTests\\BakaBackTests.csproj",
+              "RelativeToolTip": "BakaBackTests\\BakaBackTests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-24T13:58:23.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBackTests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "BakaBackTests\\UnitTest1.cs",
@@ -320,6 +505,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T13:57:49.784Z",
               "EditorCaption": ""
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -359,6 +545,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T16:39:15.36Z",
               "EditorCaption": ""
+=======
+>>>>>>> 3d26fb040cd74c6958383c2e9530cf1dfece27ea
             }
           ]
         }

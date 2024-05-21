@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace BakaBack.Models
 {
@@ -8,7 +9,5 @@ namespace BakaBack.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
-        public int MarketId { get; set; }
-        public virtual Market Market { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BakaBack.Models;
 using Microsoft.AspNetCore.Mvc;
+using BakaBack.Repositories;
 
 namespace BakaBack.Controllers
 {
