@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 public class UserService
 {
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly ApplicationUser _context;
+    private readonly ApplicationDbContext _context;
 
-    public UserService(UserManager<ApplicationUser> userManager, ApplicationUser context)
+    public UserService(UserManager<ApplicationUser> userManager, ApplicationDbContext context)
     {
         _userManager = userManager;
         _context = context;

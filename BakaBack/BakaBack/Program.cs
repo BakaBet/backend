@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using BakaBack.Contexts;
 using BakaBack.Repositories;
+using BakaBack.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);

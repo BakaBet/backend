@@ -2432,6 +2432,7 @@
           "Microsoft.AspNetCore.Identity.UI": "8.0.5",
           "Microsoft.EntityFrameworkCore": "8.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.5",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.4.0"
         },

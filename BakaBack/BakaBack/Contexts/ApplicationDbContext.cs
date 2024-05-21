@@ -11,13 +11,9 @@ namespace BakaBack.Contexts
             : base(options)
         {
         }
-    }
 
-    public class ApplicationUser : IdentityUser
-    {
+        // DbSet pour vos entités autres que ApplicationUser
         public DbSet<Bet> Bets { get; set; }
-        public DbSet<Match> Matches { get; set; } // Ajout de DbSet pour Match
-
-        public int BakaCoins { get; set; } = 100; // Initialiser avec 100 BakaCoins à l'inscription
+        public DbSet<Match> Matches { get; set; }
     }
 }
