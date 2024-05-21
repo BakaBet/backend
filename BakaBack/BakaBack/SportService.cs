@@ -1,5 +1,6 @@
 ﻿using BakaBack.Models;
 using Newtonsoft.Json.Linq;
+using BakaBack.Contexts;
 
 namespace BakaBack
 {
@@ -49,15 +50,33 @@ namespace BakaBack
 
                 foreach (var match in matches)
                 {
-                    var newMatch = new Match
+                    Match newMatch = new Match
                     {
-                        // Assignez les propriétés du match à partir des données
+                        Id = match["id"].ToString(),
+                        SportKey = match["sport_key"].ToString(),
+                        CommenceTime = DateTime.Parse(match["commence_time"].ToString()),
+                        HomeTeam = match["home_team"].ToString(),
+                        AwayTeam = match["away_team"].ToString(),
+                        Outcomes = new List<Outcome>()
                     };
+
+                    if (match["bookmakers"] != null && match["bookmakers"].Count() > 0 && match["bookmakers"][0]["markets"] != null && match["bookmakers"][0]["markets"].Count() > 0 && match["bookmakers"][0]["markets"][0]["outcomes"] != null)
+                    {
+                        var MatchOutcomes = match["bookmakers"][0]["markets"][0]["outcomes"];
+                        foreach (var outcome in MatchOutcomes)
+                        {
+                            newMatch.Outcomes.Add(new Outcome
+                            {
+                                Name = outcome["name"].ToString(),
+                                Price = decimal.Parse(outcome["price"].ToString())
+                            });
+                        }
+                    }
 
                     _dbContext.Matches.Add(newMatch);
                 }
-                await _dbContext.SaveChangesAsync();
             }
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

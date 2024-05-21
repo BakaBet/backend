@@ -10,6 +10,6 @@ namespace BakaBack.Models
         public DateTime CommenceTime { get; set; }
         public string HomeTeam { get; set; }
         public string AwayTeam { get; set; }
-        public virtual ICollection<Bookmaker> Bookmakers { get; set; }
+        public List<Outcome> Outcomes { get; set; }
     }
 }
