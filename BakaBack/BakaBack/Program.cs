@@ -7,23 +7,20 @@ using BakaBack.Contexts;
 using BakaBack.Repositories;
 using BakaBack.Models;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
 
-
 builder.Services.AddDbContext<SportsDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("UsersConnection")));
-
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 {
@@ -39,9 +36,17 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<UserService>();
-
 builder.Services.AddScoped<SportsBetRepository>();
 builder.Services.AddScoped<SportsOddsService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
 
 var app = builder.Build();
 
@@ -52,8 +57,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseAuthentication(); 
+
+app.UseCors("AllowSpecificOrigin");
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 app.MapRazorPages();
 
@@ -62,7 +71,7 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var sportsOddsService = services.GetRequiredService<SportsOddsService>();
 
-    //await sportsOddsService.GetAndSaveMatchesAsync();
+    // await sportsOddsService.GetAndSaveMatchesAsync();
 }
 
 app.Run();
