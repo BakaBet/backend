@@ -14,6 +14,7 @@ namespace BakaBack.Contexts
 
         // DbSet pour vos entités autres que ApplicationUser
         public DbSet<Bet> Bets { get; set; }
+        public DbSet<LifeBet> LifeBets { get; set; }
         public DbSet<Match> Matches { get; set; }
     }
 }

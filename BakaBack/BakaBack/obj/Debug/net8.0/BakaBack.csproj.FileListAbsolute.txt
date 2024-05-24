@@ -265,3 +265,4 @@ C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backen
 C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack\bin\Debug\net8.0\System.Web.Cors.dll

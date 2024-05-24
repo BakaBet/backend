@@ -137,6 +137,20 @@ public class AccountController : ControllerBase
 
         return Ok(new { message = "BakaCoins subtracted successfully" });
     }
+
+    [Authorize]
+    [HttpGet("currentuser")]
+    public async Task<IActionResult> GetCurrentUser()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+        {
+            return Unauthorized();
+        }
+
+        return Ok(new { Email = user.Email });
+    }
+
 }
 
 public class RegisterModel
