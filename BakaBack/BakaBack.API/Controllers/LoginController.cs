@@ -23,7 +23,10 @@ public class LoginController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+        var user = new ApplicationUser { UserName = model.UserName, Email = model.Email, FirstName = model.FirstName, 
+            LastName = model.LastName, EmailConfirmed = false, PhoneNumberConfirmed = false, TwoFactorEnabled = false, 
+            NormalizedEmail = model.NormalizedEmail, NormalizedUserName = model.NormalizedUserName, 
+            PhoneNumber = model.PhoneNumber };
         var result = await _userManager.CreateAsync(user, model.Password);
 
         if (result.Succeeded)
