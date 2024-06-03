@@ -24,8 +24,5 @@ namespace BakaBack.Infrastructure.Models
         [Phone]
         public string PhoneNumber { get; set; }
         public string UserName { get; set; }
-        [EmailAddress]
-        public string NormalizedEmail { get; set; }
-        public string NormalizedUserName { get; set; }
     }
 }

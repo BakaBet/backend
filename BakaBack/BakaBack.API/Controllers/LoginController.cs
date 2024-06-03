@@ -32,9 +32,8 @@ public class LoginController : ControllerBase
             EmailConfirmed = false,
             PhoneNumberConfirmed = false,
             TwoFactorEnabled = false,
-            NormalizedEmail = model.NormalizedEmail,
-            NormalizedUserName = model.NormalizedUserName,
-            PhoneNumber = model.PhoneNumber
+            PhoneNumber = model.PhoneNumber,
+            Coins = 100
         };
         var result = await _userManager.CreateAsync(user, model.Password);
 
