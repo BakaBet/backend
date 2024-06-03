@@ -78,7 +78,7 @@ namespace BakaBack.In.Services
                     _dbContext.SportEvents.Add(newMatch);
                 }
             }
-            await _dbContext.SaveChangesAsync();
+            //await _dbContext.SaveChangesAsync();
         }
     }
 }

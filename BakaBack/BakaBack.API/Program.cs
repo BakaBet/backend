@@ -93,7 +93,7 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var sportsOddsService = services.GetRequiredService<SportsOddsService>();
 
-    //await sportsOddsService.GetAndSaveMatchesAsync();
+    await sportsOddsService.GetAndSaveMatchesAsync();
 }
 
 

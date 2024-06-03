@@ -18,7 +18,7 @@ namespace BakaBack.Infrastructure.Repositories
         {
             try
             {
-                var events = await _context.SportEvents.ToListAsync();
+                var events = await _context.SportEvents.Include(e=>e.Outcomes).ToListAsync();
                 return events;
             }
             catch (Exception ex)
