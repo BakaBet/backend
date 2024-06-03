@@ -7,6 +7,7 @@
       "RelativeMoniker": "D:0:0:{4D9BCBCA-CF16-43DE-A742-8455A637F18E}|BakaBack.Domain\\BakaBack.Domain.csproj|solutionrelative:bakaback.domain\\models\\lifebet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4D9BCBCA-CF16-43DE-A742-8455A637F18E}|BakaBack.Domain\\BakaBack.Domain.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback.domain\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D9BCBCA-CF16-43DE-A742-8455A637F18E}|BakaBack.Domain\\BakaBack.Domain.csproj|solutionrelative:bakaback.domain\\models\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +22,35 @@
     {
       "AbsoluteMoniker": "D:0:0:{2A33FD12-8DA8-44F8-9F61-6396A2EA5C17}|BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback.infrastructure\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A33FD12-8DA8-44F8-9F61-6396A2EA5C17}|BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj|solutionrelative:bakaback.infrastructure\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A33FD12-8DA8-44F8-9F61-6396A2EA5C17}|BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback.infrastructure\\repositories\\bakacoinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A33FD12-8DA8-44F8-9F61-6396A2EA5C17}|BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj|solutionrelative:bakaback.infrastructure\\repositories\\bakacoinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4AD18571-A069-49E6-895D-757098A3E80A}|BakaBack.API\\BakaBack.API.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback.api\\controllers\\bakacoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AD18571-A069-49E6-895D-757098A3E80A}|BakaBack.API\\BakaBack.API.csproj|solutionrelative:bakaback.api\\controllers\\bakacoincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\projet\\backend\\bakaback\\bakaback\\contexts\\sportsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB366AB3-981A-4C1C-91A7-D6475FC2B5AF}|BakaBack\\BakaBack.csproj|solutionrelative:bakaback\\contexts\\sportsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD18571-A069-49E6-895D-757098A3E80A}|BakaBack.API\\BakaBack.API.csproj|c:\\users\\duver\\desktop\\bakabet\\backend\\bakaback\\bakaback.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +140,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 8,
+=======
+          "SelectedChildIndex": 9,
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,6 +156,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\appsettings.json",
@@ -166,6 +193,8 @@
             },
             {
               "$type": "Document",
+=======
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
               "DocumentIndex": 6,
               "Title": "BakaCoinController.cs",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\Controllers\\BakaCoinController.cs",
@@ -178,6 +207,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "BakaCoinRepository.cs",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\Repositories\\BakaCoinRepository.cs",
@@ -185,11 +215,45 @@
               "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\Repositories\\BakaCoinRepository.cs",
               "RelativeToolTip": "BakaBack.Infrastructure\\Repositories\\BakaCoinRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAMwA0AAAAAAAAA",
+=======
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BakaBack\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwCoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:51:09.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SportsBetsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Repositories\\SportsBetsRepository.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Repositories\\SportsBetsRepository.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Repositories\\SportsBetsRepository.cs",
+              "RelativeToolTip": "BakaBack\\Repositories\\SportsBetsRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:18:38.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Contexts\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Contexts\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Contexts\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BakaBack\\Contexts\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T06:40:50.033Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\Controllers\\AccountController.cs",
@@ -197,6 +261,15 @@
               "ToolTip": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\Controllers\\AccountController.cs",
               "RelativeToolTip": "BakaBack.API\\Controllers\\AccountController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+=======
+              "DocumentIndex": 4,
+              "Title": "Bet.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Bet.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Bet.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Bet.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Bet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T18:51:38.423Z"
             },
@@ -215,6 +288,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\Repositories\\UserRepository.cs",
@@ -260,11 +334,23 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T13:36:30.826Z",
+=======
+              "DocumentIndex": 9,
+              "Title": "BakaBack.csproj",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+              "RelativeDocumentMoniker": "BakaBack\\BakaBack.csproj",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\BakaBack.csproj",
+              "RelativeToolTip": "BakaBack\\BakaBack.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-07T07:52:40.278Z",
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+<<<<<<< HEAD
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\appsettings.json",
               "RelativeDocumentMoniker": "BakaBack.API\\appsettings.json",
@@ -273,10 +359,61 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-25T18:35:32.829Z"
+=======
+              "Title": "BakaBackTests.csproj",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBackTests\\BakaBackTests.csproj",
+              "RelativeDocumentMoniker": "BakaBackTests\\BakaBackTests.csproj",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBackTests\\BakaBackTests.csproj",
+              "RelativeToolTip": "BakaBackTests\\BakaBackTests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-24T13:58:23.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Program.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Program.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Program.cs",
+              "RelativeToolTip": "BakaBack\\Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T09:50:29.474Z",
+              "EditorCaption": ""
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "BakaBack\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:28:49.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\UserService.cs",
+              "RelativeDocumentMoniker": "BakaBack\\UserService.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\UserService.cs",
+              "RelativeToolTip": "BakaBack\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:29:28.364Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+<<<<<<< HEAD
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\Program.cs",
               "RelativeDocumentMoniker": "BakaBack.API\\Program.cs",
@@ -285,6 +422,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T18:35:59.408Z"
+=======
+              "Title": "BakaBack.http",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\BakaBack.http",
+              "RelativeDocumentMoniker": "BakaBack\\BakaBack.http",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\BakaBack.http",
+              "RelativeToolTip": "BakaBack\\BakaBack.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-21T19:08:55.789Z",
+              "EditorCaption": ""
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
             },
             {
               "$type": "Document",
@@ -296,11 +444,65 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\InfrastructureServiceExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-06-03T07:11:21.956Z"
+=======
+              "WhenOpened": "2024-05-21T16:46:35.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Market.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Market.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Market.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Market.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Market.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:18:38.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Match.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Match.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:32:30.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Bookmaker.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Bookmaker.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Bookmaker.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Bookmaker.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Bookmaker.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:18:38.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Outcome.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Outcome.cs",
+              "RelativeDocumentMoniker": "BakaBack\\Models\\Outcome.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Models\\Outcome.cs",
+              "RelativeToolTip": "BakaBack\\Models\\Outcome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:33:26.261Z",
+              "EditorCaption": ""
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+<<<<<<< HEAD
               "Title": "LifeBetController.cs",
               "DocumentMoniker": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\Controllers\\LifeBetController.cs",
               "RelativeDocumentMoniker": "BakaBack.API\\Controllers\\LifeBetController.cs",
@@ -321,6 +523,43 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T13:25:23.241Z"
+=======
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\appsettings.json",
+              "RelativeDocumentMoniker": "BakaBack\\appsettings.json",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\appsettings.json",
+              "RelativeToolTip": "BakaBack\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-07T13:05:22.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBackTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "BakaBackTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBackTests\\UnitTest1.cs",
+              "RelativeToolTip": "BakaBackTests\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T13:57:49.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BakaBack\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BakaBack\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-21T19:08:34.414Z",
+              "EditorCaption": ""
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
             },
             {
               "$type": "Document",
@@ -332,7 +571,12 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Models\\LoginModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-05-25T14:18:37.887Z"
+=======
+              "WhenOpened": "2024-05-21T19:04:56.618Z",
+              "EditorCaption": ""
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
             },
             {
               "$type": "Document",
@@ -344,6 +588,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure.Test\\FakeMailer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-05-27T06:51:33.698Z"
             },
             {
@@ -453,6 +698,10 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T13:16:49.811Z"
+=======
+              "WhenOpened": "2024-05-21T16:39:15.36Z",
+              "EditorCaption": ""
+>>>>>>> 32604ff67e7c5fc5bce3c815b57691df4647ffd4
             }
           ]
         }
