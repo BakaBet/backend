@@ -1,0 +1,65 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using BakaBack.Domain.Models;
+using BakaBack.Domain.Interfaces;
+using BakaBack.API.DTO;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+namespace BakaBack.API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class EventsController : ControllerBase
+    {
+        private readonly IEventService _eventService;
+
+        public EventsController(IEventService eventService)
+        {
+            _eventService = eventService;
+        }
+
+        // GET /events/sports
+        [HttpGet("sports")]
+        public async Task<ActionResult<IEnumerable<SportEvent>>> GetSportsEvents()
+        {
+            var events = await _eventService.GetSportsEventsAsync();
+            return Ok(events);
+        }
+
+        // GET /events/sports/{event_id}
+        [HttpGet("sports/{event_id}")]
+        public async Task<ActionResult<SportEvent>> GetSportsEvent(string event_id)
+        {
+            var sportEvent = await _eventService.GetSportsEventByIdAsync(event_id);
+            if (sportEvent == null)
+            {
+                return NotFound();
+            }
+            return Ok(sportEvent);
+        }
+
+        // GET /events/sports/{event_id}/odds
+        [HttpGet("sports/{event_id}/odds")]
+        public async Task<ActionResult<Outcome>> GetOdds(string event_id)
+        {
+            var odds = await _eventService.GetOddsByEventIdAsync(event_id);
+            if (odds == null)
+            {
+                return NotFound();
+            }
+            return Ok(odds);
+        }
+
+        // PUT /events/sports/{event_id}/odds
+        [HttpPut("sports/{event_id}/odds")]
+        public async Task<IActionResult> UpdateOdds(string event_id, [FromBody] OddsUpdateRequest request)
+        {
+            var success = await _eventService.UpdateOddsAsync(event_id, request.BetOption, request.NewOdds);
+            if (!success)
+            {
+                return BadRequest();
+            }
+            return NoContent();
+        }
+    }
+}

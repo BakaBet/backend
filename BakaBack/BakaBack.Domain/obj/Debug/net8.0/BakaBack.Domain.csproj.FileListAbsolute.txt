@@ -22,3 +22,15 @@ C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backen
 C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\refint\BakaBack.Domain.dll
 C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.pdb
 C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\ref\BakaBack.Domain.dll
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\bin\Debug\net8.0\BakaBack.Domain.deps.json
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\bin\Debug\net8.0\BakaBack.Domain.dll
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\bin\Debug\net8.0\BakaBack.Domain.pdb
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.AssemblyInfoInputs.cache
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.AssemblyInfo.cs
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.sourcelink.json
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.dll
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\refint\BakaBack.Domain.dll
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.pdb
+C:\Users\duver\Desktop\BakaBet\backend\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\ref\BakaBack.Domain.dll

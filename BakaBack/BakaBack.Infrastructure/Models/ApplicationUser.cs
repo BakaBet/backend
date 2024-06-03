@@ -5,7 +5,9 @@ namespace BakaBack.Infrastructure.Models
 {
     public class ApplicationUser : IdentityUser, IUser
     {
-        public int Coins { get; set; }
         public List<Bet> Bets { get; set; }
+        public decimal Coins { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }

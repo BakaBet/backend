@@ -5,8 +5,10 @@ using BakaBack.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using BakaBack.Domain.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using BakaBack.Domain.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -62,8 +64,13 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddMvc(); */
 
-// Add SportsBetRepository
-builder.Services.AddScoped<SportsBetRepository>();
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IBetRepository, BetRepository>();
+
+builder.Services.AddScoped<IBetService, BetService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IEventService, EventService>();
 
 var app = builder.Build();
 

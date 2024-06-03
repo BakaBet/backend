@@ -1,9 +1,15 @@
-﻿using BakaBack.Domain.Models;
+﻿using BakaBack.Domain.Interfaces;
+using BakaBack.Domain.Models;
 using BakaBack.Infrastructure.Contexts;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BakaBack.Infrastructure.Repositories
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -12,30 +18,81 @@ namespace BakaBack.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<IUser> GetUserByIdAsync(string userId)
+        public async Task<bool> AddBonusAsync(string userId, decimal bonusAmount)
         {
-            return await _context.Users.FindAsync(userId);
-        }
-
-        public async Task UpdateUserAsync(IUser user)
-        {
-            var appUser = await _context.Users.FindAsync(user.Id);
-            if (appUser != null)
+            try
             {
-                //appUser.Username = user.Username;
-                appUser.Coins = user.Coins;
-                _context.Users.Update(appUser);
+                var user = await _context.Users.FindAsync(userId);
+                if (user == null)
+                    return false;
+
+                user.Coins += bonusAmount;
                 await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to add bonus to user.", ex);
             }
         }
 
-        public async Task DeleteUserAsync(string userId)
+        public async Task<IUser> GetUserByIdAsync(string userId)
         {
-            var user = await _context.Users.FindAsync(userId);
-            if (user != null)
+            try
             {
-                _context.Users.Remove(user);
+                return await _context.Users.FindAsync(userId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to retrieve user by ID.", ex);
+            }
+        }
+
+        public async Task<decimal?> GetUserBalanceAsync(string userId)
+        {
+            try
+            {
+                var user = await _context.Users.FindAsync(userId);
+                return user?.Coins;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to retrieve user balance.", ex);
+            }
+        }
+
+        public async Task<IEnumerable<Bet>> GetUserBetHistoryAsync(string userId)
+        {
+            try
+            {
+                return await _context.Bets
+                    .Where(b => b.UserId == userId)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to retrieve user bet history.", ex);
+            }
+        }
+
+        public async Task<bool> UpdateUserAsync(string userId, string firstName, string lastName, string email)
+        {
+            try
+            {
+                var user = await _context.Users.FindAsync(userId);
+                if (user == null)
+                    return false;
+
+                user.FirstName = firstName;
+                user.LastName = lastName;
+                user.Email = email;
+
                 await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to update user.", ex);
             }
         }
     }

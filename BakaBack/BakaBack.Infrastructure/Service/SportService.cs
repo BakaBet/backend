@@ -51,7 +51,7 @@ namespace BakaBack.In.Services
 
                 foreach (var match in matches)
                 {
-                    Match newMatch = new Match
+                    SportEvent newMatch = new SportEvent
                     {
                         Id = match["id"].ToString(),
                         SportKey = match["sport_key"].ToString(),
@@ -74,7 +74,7 @@ namespace BakaBack.In.Services
                         }
                     }
 
-                    _dbContext.Matches.Add(newMatch);
+                    _dbContext.SportEvents.Add(newMatch);
                 }
             }
             await _dbContext.SaveChangesAsync();

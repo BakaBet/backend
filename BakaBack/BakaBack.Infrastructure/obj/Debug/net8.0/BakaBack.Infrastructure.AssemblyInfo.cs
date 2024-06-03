@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BakaBack.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b5d0ef3a1cea857744b71b646e4694a43ccfeb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a324a632d83a4be3110ac9de2c6efd90007d2642")]
 [assembly: System.Reflection.AssemblyProductAttribute("BakaBack.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BakaBack.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
