@@ -23,16 +23,24 @@ public class LoginController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        var user = new ApplicationUser { UserName = model.UserName, Email = model.Email, FirstName = model.FirstName, 
-            LastName = model.LastName, EmailConfirmed = false, PhoneNumberConfirmed = false, TwoFactorEnabled = false, 
-            NormalizedEmail = model.NormalizedEmail, NormalizedUserName = model.NormalizedUserName, 
-            PhoneNumber = model.PhoneNumber };
+        var user = new ApplicationUser
+        {
+            UserName = model.UserName,
+            Email = model.Email,
+            FirstName = model.FirstName,
+            LastName = model.LastName,
+            EmailConfirmed = false,
+            PhoneNumberConfirmed = false,
+            TwoFactorEnabled = false,
+            PhoneNumber = model.PhoneNumber,
+            Coins = 100
+        };
         var result = await _userManager.CreateAsync(user, model.Password);
 
         if (result.Succeeded)
         {
             await _signInManager.SignInAsync(user, isPersistent: false);
-            return Ok(new { message = "User registered successfully" });
+            return Ok(new { message = "User registered successfully", userId = user.Id });
         }
 
         foreach (var error in result.Errors)
@@ -51,11 +59,12 @@ public class LoginController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+        var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
 
         if (result.Succeeded)
         {
-            return Ok(new { message = "User logged in successfully" });
+            var user = await _userManager.FindByNameAsync(model.UserName);
+            return Ok(new { message = "User logged in successfully", userId = user.Id });
         }
 
         if (result.IsLockedOut)
