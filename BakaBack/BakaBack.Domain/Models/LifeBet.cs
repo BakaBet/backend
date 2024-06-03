@@ -1,6 +1,6 @@
 ﻿namespace BakaBack.Domain.Models
 {
-    public interface LifeBet
+    public class LifeBet
     {
         public int Id { get; set; }
         public string Terms { get; set; }

@@ -22,7 +22,7 @@ namespace BakaBack.Infrastructure.Repositories
             var appUser = await _context.Users.FindAsync(user.Id);
             if (appUser != null)
             {
-                appUser.Username = user.Username;
+                //appUser.Username = user.Username;
                 appUser.Coins = user.Coins;
                 _context.Users.Update(appUser);
                 await _context.SaveChangesAsync();

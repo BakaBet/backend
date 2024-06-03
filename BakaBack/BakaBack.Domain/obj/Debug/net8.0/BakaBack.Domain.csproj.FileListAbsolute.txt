@@ -10,3 +10,15 @@ C:\Users\duver\Desktop\BakaBet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0
 C:\Users\duver\Desktop\BakaBet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\refint\BakaBack.Domain.dll
 C:\Users\duver\Desktop\BakaBet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.pdb
 C:\Users\duver\Desktop\BakaBet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\ref\BakaBack.Domain.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\bin\Debug\net8.0\BakaBack.Domain.deps.json
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\bin\Debug\net8.0\BakaBack.Domain.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\bin\Debug\net8.0\BakaBack.Domain.pdb
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.AssemblyInfoInputs.cache
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.AssemblyInfo.cs
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.sourcelink.json
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\refint\BakaBack.Domain.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\BakaBack.Domain.pdb
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Projet\backend\BakaBack\BakaBack.Domain\obj\Debug\net8.0\ref\BakaBack.Domain.dll

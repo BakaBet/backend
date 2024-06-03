@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj": {}
+    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj": {
+    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
         "projectName": "BakaBack.API",
-        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
-        "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.API\\obj\\",
+        "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
+        "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\duver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
-                "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj"
+              "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj"
               },
-              "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj"
+              "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj"
               }
             }
           }
@@ -57,6 +56,16 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -81,24 +90,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
+    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
         "projectName": "BakaBack.Domain",
-        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
-        "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
+        "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\duver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -107,7 +116,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -146,24 +154,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj": {
+    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
         "projectName": "BakaBack.Infrastructure",
-        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\duver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,15 +180,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
-                "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj"
+              "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj"
               }
             }
           }
@@ -204,7 +211,7 @@
               "target": "Package",
               "version": "[8.0.5, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.5, )"
             },
@@ -233,7 +240,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

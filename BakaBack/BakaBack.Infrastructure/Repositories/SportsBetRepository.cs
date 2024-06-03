@@ -6,9 +6,9 @@ namespace BakaBack.Infrastructure.Repositories
 {
     public class SportsBetRepository
     {
-        private readonly SportsDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public SportsBetRepository(SportsDbContext context)
+        public SportsBetRepository(ApplicationDbContext context)
         {
             _context = context;
         }

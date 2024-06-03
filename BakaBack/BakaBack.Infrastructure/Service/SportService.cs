@@ -10,10 +10,10 @@ namespace BakaBack.In.Services
         private readonly HttpClient _client;
         private readonly string _apiKey;
         private readonly Dictionary<string, string> _endpoints;
-        private readonly SportsDbContext _dbContext;
+        private readonly ApplicationDbContext _dbContext;
         private readonly string _startURI;
 
-        public SportsOddsService(IConfiguration config, HttpClient client, SportsDbContext dbContext)
+        public SportsOddsService(IConfiguration config, HttpClient client, ApplicationDbContext dbContext)
         {
             _client = client;
             _apiKey = config["SportsOddsApi:ApiKey"];
