@@ -16,7 +16,7 @@ namespace BakaBack.In.Services
         public SportsOddsService(IConfiguration config, HttpClient client, ApplicationDbContext dbContext)
         {
             _client = client;
-            _apiKey = config["SportsOddsApi:ApiKey"];
+            _apiKey = "62a9e964acb1b087bfc057fe3f07947d";
             _dbContext = dbContext;
             _startURI = "https://api.the-odds-api.com/v4/sports/";
 
@@ -55,6 +55,7 @@ namespace BakaBack.In.Services
                     {
                         Id = match["id"].ToString(),
                         SportKey = match["sport_key"].ToString(),
+                        SportTitle = match["sport_title"].ToString(),
                         CommenceTime = DateTime.Parse(match["commence_time"].ToString()),
                         HomeTeam = match["home_team"].ToString(),
                         AwayTeam = match["away_team"].ToString(),

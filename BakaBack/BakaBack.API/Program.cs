@@ -9,6 +9,7 @@ using BakaBack.Domain.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using BakaBack.Domain.Services;
+using BakaBack.In.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -68,6 +69,7 @@ builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IBetRepository, BetRepository>();
 
+builder.Services.AddScoped<SportsOddsService>();
 builder.Services.AddScoped<IBetService, BetService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEventService, EventService>();
@@ -85,5 +87,14 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var sportsOddsService = services.GetRequiredService<SportsOddsService>();
+
+    await sportsOddsService.GetAndSaveMatchesAsync();
+}
+
 
 app.Run();

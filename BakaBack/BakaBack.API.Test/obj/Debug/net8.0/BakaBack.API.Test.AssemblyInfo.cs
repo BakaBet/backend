@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BakaBack.API.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67eb3c0a404c13e47ec3c052915aa6b57efa8a9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0b7b337c1a5e94f584071d0a85254d77b6113f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("BakaBack.API.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BakaBack.API.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
