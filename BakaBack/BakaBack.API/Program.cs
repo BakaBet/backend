@@ -27,15 +27,18 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
-/* builder.Services.Configure<IdentityOptions>(options =>
-{ // Fonctionnel, à utiliser plus tard en dehors de la phase de développement
+builder.Services.Configure<IdentityOptions>(options =>
+{
     options.Password.RequireDigit = false;
     options.Password.RequiredLength = 6;
     options.Password.RequireLowercase = false;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = false;
     options.Password.RequiredUniqueChars = 0;
-}); */
+    options.SignIn.RequireConfirmedEmail = false;
+    options.SignIn.RequireConfirmedAccount = false;
+    options.SignIn.RequireConfirmedPhoneNumber = false;
+});
 
 /* builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
