@@ -144,7 +144,7 @@
               "RelativeDocumentMoniker": "BakaBack.API\\Program.cs",
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\Program.cs",
               "RelativeToolTip": "BakaBack.API\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAcwD4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T12:57:42.251Z",
               "EditorCaption": ""
@@ -159,8 +159,7 @@
               "RelativeToolTip": "BakaBack.API\\Controllers\\LoginController.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAuwEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.327Z"
             },
             {
               "$type": "Document",
@@ -172,8 +171,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Repositories\\UserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.241Z"
             },
             {
               "$type": "Document",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "BakaBack.Domain\\Models\\IUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.251Z"
             },
             {
               "$type": "Document",
@@ -198,8 +195,7 @@
               "RelativeToolTip": "BakaBack.Domain\\Models\\Bet.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.221Z"
             },
             {
               "$type": "Document",
@@ -211,8 +207,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Models\\ApplicationUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.247Z"
             },
             {
               "$type": "Document",
@@ -224,8 +219,7 @@
               "RelativeToolTip": "BakaBack.API\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-03T13:28:07.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T13:28:07.689Z"
             },
             {
               "$type": "Document",
@@ -237,8 +231,7 @@
               "RelativeToolTip": "BakaBack.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-03T12:57:42.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.251Z"
             },
             {
               "$type": "Document",
@@ -250,8 +243,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-03T12:57:42.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.201Z"
             },
             {
               "$type": "Document",
@@ -263,8 +255,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Contexts\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.247Z"
             },
             {
               "$type": "Document",
@@ -276,8 +267,7 @@
               "RelativeToolTip": "BakaBack.API\\Controllers\\LifeBetController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.262Z"
             },
             {
               "$type": "Document",
@@ -289,8 +279,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Repositories\\SportsBetRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.332Z"
             },
             {
               "$type": "Document",
@@ -302,8 +291,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Service\\SportService.cs",
               "ViewState": "AQIAADwAAAAAAAAAAAAYwE0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.332Z"
             },
             {
               "$type": "Document",
@@ -315,34 +303,31 @@
               "RelativeToolTip": "BakaBack.API\\Controllers\\SportBetsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T14:15:20.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T14:15:20.319Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "BakaBack.API",
+              "Title": "BakaBack.API.csproj",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
               "RelativeDocumentMoniker": "BakaBack.API\\BakaBack.API.csproj",
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
               "RelativeToolTip": "BakaBack.API\\BakaBack.API.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-03T14:12:05.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T14:12:05.665Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "BakaBack.Infrastructure",
+              "Title": "BakaBack.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
               "RelativeDocumentMoniker": "BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
               "RelativeToolTip": "BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-03T14:11:44.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T14:11:44.344Z"
             },
             {
               "$type": "Document",
@@ -354,8 +339,7 @@
               "RelativeToolTip": "BakaBack.Domain\\Models\\LifeBet.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.241Z"
             },
             {
               "$type": "Document",
@@ -367,8 +351,7 @@
               "RelativeToolTip": "BakaBack.API\\Controllers\\AccountController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.231Z"
             },
             {
               "$type": "Document",
@@ -380,8 +363,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Repositories\\BakaCoinRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAMwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.231Z"
             },
             {
               "$type": "Document",
@@ -393,8 +375,7 @@
               "RelativeToolTip": "BakaBack.API\\Controllers\\BakaCoinController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.231Z"
             },
             {
               "$type": "Document",
@@ -406,8 +387,7 @@
               "RelativeToolTip": "BakaBack.Domain\\Services\\UserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.231Z"
             },
             {
               "$type": "Document",
@@ -419,8 +399,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Models\\LoginModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.262Z"
             },
             {
               "$type": "Document",
@@ -432,8 +411,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure.Test\\FakeMailer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.262Z"
             },
             {
               "$type": "Document",
@@ -445,8 +423,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-03T12:57:42.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.271Z"
             },
             {
               "$type": "Document",
@@ -458,8 +435,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Interfaces\\IMailer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.322Z"
             },
             {
               "$type": "Document",
@@ -471,8 +447,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure.Test\\FakeSportApi.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.327Z"
             },
             {
               "$type": "Document",
@@ -484,8 +459,7 @@
               "RelativeToolTip": "BakaBack.Infrastructure\\Models\\RegisterModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.332Z"
             },
             {
               "$type": "Document",
@@ -497,8 +471,7 @@
               "RelativeToolTip": "BakaBack.Domain\\Models\\Match.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.332Z"
             },
             {
               "$type": "Document",
@@ -510,8 +483,7 @@
               "RelativeToolTip": "BakaBack.Domain\\Models\\Outcome.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T12:57:42.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T12:57:42.342Z"
             }
           ]
         }
