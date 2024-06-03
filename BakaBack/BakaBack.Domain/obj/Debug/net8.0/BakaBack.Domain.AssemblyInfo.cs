@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BakaBack.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a324a632d83a4be3110ac9de2c6efd90007d2642")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67eb3c0a404c13e47ec3c052915aa6b57efa8a9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BakaBack.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BakaBack.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

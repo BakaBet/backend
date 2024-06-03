@@ -30,7 +30,9 @@ namespace BakaBack.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
-                    Coins = table.Column<int>(type: "INTEGER", nullable: false),
+                    Coins = table.Column<decimal>(type: "TEXT", nullable: false),
+                    FirstName = table.Column<string>(type: "TEXT", nullable: false),
+                    LastName = table.Column<string>(type: "TEXT", nullable: false),
                     UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
@@ -52,35 +54,19 @@ namespace BakaBack.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "LifeBets",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Terms = table.Column<string>(type: "TEXT", nullable: false),
-                    Odds = table.Column<decimal>(type: "TEXT", nullable: false),
-                    InitialStake = table.Column<decimal>(type: "TEXT", nullable: false),
-                    Status = table.Column<string>(type: "TEXT", nullable: false),
-                    CreatorId = table.Column<string>(type: "TEXT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LifeBets", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Matches",
+                name: "SportEvents",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
                     SportKey = table.Column<string>(type: "TEXT", nullable: false),
+                    SportTitle = table.Column<string>(type: "TEXT", nullable: false),
                     CommenceTime = table.Column<DateTime>(type: "TEXT", nullable: false),
                     HomeTeam = table.Column<string>(type: "TEXT", nullable: false),
                     AwayTeam = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Matches", x => x.Id);
+                    table.PrimaryKey("PK_SportEvents", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -198,7 +184,6 @@ namespace BakaBack.Infrastructure.Migrations
                     UserId = table.Column<string>(type: "TEXT", nullable: false),
                     MatchId = table.Column<string>(type: "TEXT", nullable: false),
                     Amount = table.Column<decimal>(type: "TEXT", nullable: false),
-                    Odds = table.Column<decimal>(type: "TEXT", nullable: false),
                     DatePlaced = table.Column<DateTime>(type: "TEXT", nullable: false),
                     IsWon = table.Column<bool>(type: "INTEGER", nullable: false),
                     ApplicationUserId = table.Column<string>(type: "TEXT", nullable: true)
@@ -212,37 +197,32 @@ namespace BakaBack.Infrastructure.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Bets_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Bets_Matches_MatchId",
+                        name: "FK_Bets_SportEvents_MatchId",
                         column: x => x.MatchId,
-                        principalTable: "Matches",
+                        principalTable: "SportEvents",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Outcome",
+                name: "Outcomes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Price = table.Column<decimal>(type: "TEXT", nullable: false),
-                    MatchId = table.Column<string>(type: "TEXT", nullable: true)
+                    EventId = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Outcome", x => x.Id);
+                    table.PrimaryKey("PK_Outcomes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Outcome_Matches_MatchId",
-                        column: x => x.MatchId,
-                        principalTable: "Matches",
-                        principalColumn: "Id");
+                        name: "FK_Outcomes_SportEvents_EventId",
+                        column: x => x.EventId,
+                        principalTable: "SportEvents",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -293,14 +273,9 @@ namespace BakaBack.Infrastructure.Migrations
                 column: "MatchId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Bets_UserId",
-                table: "Bets",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Outcome_MatchId",
-                table: "Outcome",
-                column: "MatchId");
+                name: "IX_Outcomes_EventId",
+                table: "Outcomes",
+                column: "EventId");
         }
 
         /// <inheritdoc />
@@ -325,10 +300,7 @@ namespace BakaBack.Infrastructure.Migrations
                 name: "Bets");
 
             migrationBuilder.DropTable(
-                name: "LifeBets");
-
-            migrationBuilder.DropTable(
-                name: "Outcome");
+                name: "Outcomes");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -337,7 +309,7 @@ namespace BakaBack.Infrastructure.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Matches");
+                name: "SportEvents");
         }
     }
 }
