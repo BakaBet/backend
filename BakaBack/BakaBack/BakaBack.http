@@ -1,6 +1,0 @@
-@BakaBack_HostAddress = http://localhost:5042
-
-GET {{BakaBack_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
