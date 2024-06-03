@@ -58,15 +58,15 @@ builder.Services.Configure<IdentityOptions>(options =>
 builder.Services.AddAuthorization();
 
 builder.Services.AddAuthorization(options => { options.FallbackPolicy = options.DefaultPolicy; });
-
+*/
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy",
-               builder => builder.AllowAnyOrigin()
-                          .AllowAnyMethod()
-                                     .AllowAnyHeader());
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
 });
-builder.Services.AddMvc(); */
 
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
