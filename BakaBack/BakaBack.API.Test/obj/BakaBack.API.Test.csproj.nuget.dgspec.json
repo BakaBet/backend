@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj": {}
+    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj": {
+    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj",
+        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj",
         "projectName": "BakaBack.API.Test",
-        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj",
+        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API.Test\\BakaBack.API.Test.csproj",
         "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.API.Test\\obj\\",
+        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

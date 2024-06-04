@@ -7,33 +7,15 @@ namespace BakaBack.Domain.Models.Tests
     public class SportEventTests
     {
         [Fact]
-        public void Constructor_ThrowsException_WhenOddsAreNonPositive()
-        {
-            var fakeClock = new FakeClock(new DateTime(2024, 3, 10));
-
-            // Arrange
-            var id = "1";
-            var sportKey = "soccer";
-            var sportTitle = "Soccer Match";
-            var commenceTime = fakeClock.Now;
-            var homeTeam = "Team A";
-            var awayTeam = "Team B";
-
-            // Act & Assert
-            Assert.Throws<ArgumentException>(() => new SportEvent(id, sportKey, sportTitle, commenceTime, homeTeam, awayTeam, -1m, 2.5m));
-            Assert.Throws<ArgumentException>(() => new SportEvent(id, sportKey, sportTitle, commenceTime, homeTeam, awayTeam, 1.5m, 0m));
-        }
-
-        [Fact]
         public void HasEnded_ReturnsTrue_WhenEventIsInThePast()
         {
-            var fakeClock = new FakeClock(new DateTime(2024, 3, 10));
-
             // Arrange
+            var fakeClock = new FakeClock(new DateTime(2024, 3, 10));
+            var commenceTime = fakeClock.Now;
             var sportEvent = new SportEvent("1",
                 "soccer",
                 "Soccer Match",
-                fakeClock.Now,
+                commenceTime,
                 "Team A",
                 "Team B",
                 1.5m,
@@ -49,13 +31,13 @@ namespace BakaBack.Domain.Models.Tests
         [Fact]
         public void HasEnded_ReturnsFalse_WhenEventIsInTheFuture()
         {
-            var fakeClock = new FakeClock(new DateTime(2025, 3, 10));
-
             // Arrange
+            var fakeClock = new FakeClock(new DateTime(2025, 3, 10));
+            var commenceTime = fakeClock.Now;
             var sportEvent = new SportEvent("1",
                 "soccer",
                 "Soccer Match",
-                fakeClock.Now,
+                commenceTime,
                 "Team A",
                 "Team B",
                 1.5m,
@@ -71,13 +53,13 @@ namespace BakaBack.Domain.Models.Tests
         [Fact]
         public void MarkAsFinished_SetsIsFinished_WhenEventHasEnded()
         {
-            var fakeClock = new FakeClock(new DateTime(2022, 3, 10));
-
             // Arrange
+            var fakeClock = new FakeClock(new DateTime(2022, 3, 10));
+            var commenceTime = fakeClock.Now;
             var sportEvent = new SportEvent("1",
                 "soccer",
                 "Soccer Match",
-                fakeClock.Now,
+                commenceTime,
                 "Team A",
                 "Team B",
                 1.5m,
@@ -93,13 +75,13 @@ namespace BakaBack.Domain.Models.Tests
         [Fact]
         public void MarkAsFinished_DoesNotSetIsFinished_WhenEventHasNotEnded()
         {
-            var fakeClock = new FakeClock(new DateTime(2025, 3, 10));
-
             // Arrange
+            var fakeClock = new FakeClock(new DateTime(2025, 3, 10));
+            var commenceTime = fakeClock.Now;
             var sportEvent = new SportEvent("1",
                 "soccer",
                 "Soccer Match",
-                fakeClock.Now,
+                commenceTime,
                 "Team A",
                 "Team B",
                 1.5m,

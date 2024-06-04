@@ -6902,11 +6902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
+      "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
       "projectName": "BakaBack.Infrastructure.Test",
-      "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
+      "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
       "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\obj\\",
+      "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6928,8 +6928,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj"
+            "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj"
             }
           }
         }

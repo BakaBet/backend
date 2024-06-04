@@ -28,14 +28,14 @@
             {
                 IsEnded = true;
                 RandomWinner();
-                AttributeGains();
+                CalculatePotentialGains();
                 return true;
             }
 
             return false;
         }
 
-        private void AttributeGains()
+        private void CalculatePotentialGains()
         {
             if (IsWon)
             {

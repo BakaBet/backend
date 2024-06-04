@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {}
+    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
+    "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
         "projectName": "BakaBack.Domain",
-        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
+        "projectPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
         "packagesPath": "C:\\Users\\duver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Domain\\obj\\",
+        "outputPath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

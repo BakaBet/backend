@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I3iECU+CtN13PulUlcHDkfVgwQqEOPjCTpQDnJH6ar/xi55jMGCB01w2SkgOdoZeUWjgBk4r0dAbxvXHnyGoYw==",
+  "dgSpecHash": "cD3nWi8sbFjZVUhUNrd2t5oRUWVL8qr7siw7E115WTFRvO8xfeUDYMNgJm3aj/3eD6hNw7Gr6Ts+fvoJuVTtgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Domain.Test\\BakaBack.Domain.Test.csproj",
+  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain.Test\\BakaBack.Domain.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duver\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\duver\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JiVUUwc6g8CcqfJ/SUKBPHWe3fBRLDl/FnzWf77UaNS1aNszYME/WWcAB7qIZbUgs6E3HR85cYvI9JSN6ii64Q==",
+  "dgSpecHash": "DoBGj30KmrdbfyAYC+eB6F06wVl71NGiKIHEv5U9JWaPVJjfU4/3erc3/637A4KmqyZ12ZF0uFD+OabjsHW9bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
+  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure.Test\\BakaBack.Infrastructure.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duver\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\duver\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.5\\microsoft.aspnetcore.cryptography.internal.8.0.5.nupkg.sha512",

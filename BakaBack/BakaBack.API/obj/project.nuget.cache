@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u9krDpHfxI2bi3901edhyeWtqRfwlBvWdhMwE7c/cAaXwgVfvN54uZ5Hw3wpf+UwpE4r8KJ7cjVyWlnBw5l5bQ==",
+  "dgSpecHash": "G41mB5nm8kD2bEYV944NMZXZv22Iud1Xz3WCAPzINQsUVLtwKtWiBQfK5ri7YhoMicckfJXg/VMRWGRpS8dBoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
+  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duver\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\duver\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.6\\microsoft.aspnetcore.authentication.jwtbearer.8.0.6.nupkg.sha512",
