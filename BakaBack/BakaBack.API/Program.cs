@@ -10,7 +10,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using BakaBack.Domain.Services;
 using BakaBack.In.Services;
-
+using BakaBack.Infrastructure.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,25 +41,6 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.SignIn.RequireConfirmedPhoneNumber = false;
 });
 
-/* builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Issuer"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-        };
-    });
-
-builder.Services.AddAuthorization();
-
-builder.Services.AddAuthorization(options => { options.FallbackPolicy = options.DefaultPolicy; });
-*/
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
@@ -72,11 +54,19 @@ builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IBetRepository, BetRepository>();
 
-
 builder.Services.AddScoped<SportsOddsService>();
 builder.Services.AddScoped<IBetService, BetService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEventService, EventService>();
+
+// Register TimerService as a singleton but use a scoped service provider
+builder.Services.AddSingleton<TimerService>(serviceProvider =>
+{
+    var scopeFactory = serviceProvider.GetRequiredService<IServiceScopeFactory>();
+    var scope = scopeFactory.CreateScope();
+    var betService = scope.ServiceProvider.GetRequiredService<IBetService>();
+    return new TimerService(betService);
+});
 
 var app = builder.Build();
 
@@ -99,8 +89,9 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
     var sportsOddsService = services.GetRequiredService<SportsOddsService>();
 
+    var timerService = services.GetRequiredService<TimerService>();
+
     //await sportsOddsService.GetAndSaveMatchesAsync();
 }
-
 
 app.Run();

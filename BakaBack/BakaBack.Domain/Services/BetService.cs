@@ -70,5 +70,24 @@ namespace BakaBack.Domain.Services
                 throw new Exception("Failed to retrieve user bets.", ex);
             }
         }
+
+        public async Task CheckAndEndBetsAsync()
+        {
+            var activeBets = await _betRepository.GetAllActiveBetsAsync();
+
+            foreach (Bet bet in activeBets)
+            {
+                bet.EndBet();
+                if (bet.IsEnded)
+                {
+                    await _betRepository.UpdateBetAsync(bet);
+                }
+
+                if(bet.IsWon)
+                {
+                    _userService.AddBonusAsync(bet.UserId, bet.Amount * bet.Odd);
+                }
+            }
+        }
     }
 }

@@ -72,7 +72,14 @@ namespace BakaBack.API.Controllers
                 {
                     return NotFound();
                 }
-                return Ok(user);
+                var result = new UserOutput
+                {
+                    UserId = user.Id,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Coins = user.Coins
+                };
+                return Ok(result);
             }
             catch (Exception ex)
             {

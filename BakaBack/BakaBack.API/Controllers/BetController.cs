@@ -27,7 +27,7 @@ namespace BakaBack.API.Controllers
             {
                 var result = await _betService.PlaceBetAsync(
                     new Bet { UserId = bet.UserId, EventId = bet.EventId, 
-                    Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false });
+                    Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false , EndTime = DateTime.Now.AddMinutes(1) , Gains = 0 , IsEnded = false});
                 return Ok(bet);
             }
             catch (Exception ex)

@@ -1,10 +1,7 @@
-﻿using BakaBack.Domain.Interfaces;
-using BakaBack.Domain.Models;
-using BakaBack.Infrastructure.Contexts;
+﻿using BakaBack.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using BakaBack.Domain.Interfaces;
+using BakaBack.Domain.Models;
 
 namespace BakaBack.Infrastructure.Repositories
 {
@@ -40,17 +37,47 @@ namespace BakaBack.Infrastructure.Repositories
             }
         }
 
-        public async Task<IEnumerable<Bet>> GetUserBetsAsync(string user_id)
+        public async Task<IEnumerable<Bet>> GetUserBetsAsync(string userId)
         {
             try
             {
                 return await _context.Bets
-                    .Where(b => b.UserId == user_id)
+                    .Where(b => b.UserId == userId)
                     .ToListAsync();
             }
             catch (Exception ex)
             {
                 throw new Exception("Failed to retrieve user bets.", ex);
+            }
+        }
+
+        public async Task<IEnumerable<Bet>> GetAllActiveBetsAsync()
+        {
+            try
+            {
+                return await _context.Bets
+                    .Where(b => !b.IsEnded)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to retrieve active bets.", ex);
+            }
+        }
+
+        public async Task UpdateBetAsync(Bet bet)
+        {
+            if (bet == null)
+                throw new ArgumentNullException(nameof(bet));
+
+            try
+            {
+                _context.Bets.Update(bet);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to update bet.", ex);
             }
         }
     }

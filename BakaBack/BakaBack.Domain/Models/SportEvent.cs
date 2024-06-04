@@ -10,6 +10,7 @@
         public string AwayTeam { get; set; }
         public decimal? HomeOutcome { get; set; }
         public decimal? AwayOutcome { get; set; }
+        public bool IsFinished { get; private set; }
 
         public SportEvent(string id,string sportKey, string sportTitle, DateTime commenceTime, string homeTeam, string awayTeam, decimal? homeOutcome, decimal? awayOutcome)
         {
@@ -26,11 +27,20 @@
             AwayTeam = awayTeam;
             HomeOutcome = homeOutcome;
             AwayOutcome = awayOutcome;
+            IsFinished = false;
         }
 
         public bool HasEnded()
         {
             return CommenceTime < DateTime.Now;
+        }
+
+        public void MarkAsFinished()
+        {
+            if (HasEnded())
+            {
+                IsFinished = true;
+            }
         }
 
         private void ValidateOdds(decimal? HomeOutcome , decimal? AwayOutcome)
