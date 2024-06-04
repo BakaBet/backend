@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "I/3XZexdnmBXaW1WLkxQj8YHFxNOODvimuqsvNQMLrnpar/ji0ng0THrSTSb1b83UgqRaH++G0btud4Kw9YJQw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
-=======
   "dgSpecHash": "d7QFg+ravBpvcyfKDew+u+9LIm939kIzrifDhfzJcxIecNDQORlxDdbg8cypTtIDKfcMn2cO9MZvBE4YXhzswg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\BakaBack.Infrastructure.csproj",
->>>>>>> f9041154728d5071814889aa059f002d03e5d81b
   "expectedPackageFiles": [
     "C:\\Users\\Alexandre\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.5\\microsoft.aspnetcore.cryptography.internal.8.0.5.nupkg.sha512",
     "C:\\Users\\Alexandre\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.5\\microsoft.aspnetcore.cryptography.keyderivation.8.0.5.nupkg.sha512",
@@ -41,5 +35,12 @@
     "C:\\Users\\Alexandre\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Alexandre\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Infrastructure\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

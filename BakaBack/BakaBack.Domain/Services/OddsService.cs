@@ -28,8 +28,8 @@ namespace BakaBack.Domain.Services
             if (totalBets > 0)
             {
 
-                await UpdateAwayOutcomeAsync(eventId, CalculateAwayOutcomeAsync(awayBets, totalBets));
-                await UpdateHomeOutcomeAsync(eventId, CalculateHomeOutcomeAsync(homeBets, totalBets));
+                await UpdateAwayOutcomeAsync(eventId, CalculateOutcome(awayBets, totalBets));
+                await UpdateHomeOutcomeAsync(eventId, CalculateOutcome(homeBets, totalBets));
 
             }
         }
@@ -43,22 +43,14 @@ namespace BakaBack.Domain.Services
         {
             await _sportEventRepository.UpdateHomeOutcomeAsync(eventId, value);
         }
-        public decimal CalculateHomeOutcomeAsync(int homeBets, int totalBets)
+        public decimal CalculateOutcome(int bets, int totalBets)
         {
 
-            if (homeBets < 1)
+            if (bets < 1 && totalBets > 1)
             {
-                homeBets = 1;
+                bets = 1;
             }
-            return 1.0m / ((decimal)homeBets / totalBets);
+            return 1.0m / ((decimal)bets / totalBets);
         }
-        public decimal CalculateAwayOutcomeAsync(int awayBets, int totalBets)
-        {
-            if (awayBets < 1)
-            {
-                awayBets = 1;
-            }
-            return 1.0m / ((decimal)awayBets / totalBets);
-        }   
     }
 }

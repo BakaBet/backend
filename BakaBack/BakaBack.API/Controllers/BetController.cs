@@ -28,13 +28,8 @@ namespace BakaBack.API.Controllers
             try
             {
                 var result = await _betService.PlaceBetAsync(
-                    new Bet { UserId = bet.UserId, EventId = bet.EventId, 
-<<<<<<< HEAD
-                    Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false , EndTime = DateTime.Now.AddMinutes(1) , IsEnded = false});
-=======
-                    Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false , EndTime = DateTime.Now.AddMinutes(1) , Gains = 0 , IsEnded = false});
+                    new Bet { UserId = bet.UserId, EventId = bet.EventId, Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false , EndTime = DateTime.Now.AddMinutes(1) , Gains = 0 , IsEnded = false});
                 await _oddsService.UpdateOddsAsync(bet.EventId);
->>>>>>> f9041154728d5071814889aa059f002d03e5d81b
                 return Ok(bet);
             }
             catch (Exception ex)

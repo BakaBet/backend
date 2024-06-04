@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "G41mB5nm8kD2bEYV944NMZXZv22Iud1Xz3WCAPzINQsUVLtwKtWiBQfK5ri7YhoMicckfJXg/VMRWGRpS8dBoA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
-=======
   "dgSpecHash": "E9+iMDCidUXNEhQB+WJXGvpwnqfbdZifILQukmmBYkyiz7Jr400Lv219WMHVjhiWnpSGx8ggXRLJ//jgFQIZEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\BakaBack.API.csproj",
->>>>>>> f9041154728d5071814889aa059f002d03e5d81b
   "expectedPackageFiles": [
     "C:\\Users\\Alexandre\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Alexandre\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.6\\microsoft.aspnetcore.authentication.jwtbearer.8.0.6.nupkg.sha512",
@@ -77,5 +71,12 @@
     "C:\\Users\\Alexandre\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Alexandre\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
