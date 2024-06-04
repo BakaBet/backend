@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BakaBack.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class oc : Migration
+    public partial class Test : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -189,6 +189,7 @@ namespace BakaBack.Infrastructure.Migrations
                     DatePlaced = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Odd = table.Column<decimal>(type: "TEXT", nullable: false),
                     IsWon = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Team = table.Column<string>(type: "TEXT", nullable: false),
                     ApplicationUserId = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>

@@ -1,24 +1,18 @@
-﻿namespace BakaBack.Domain.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+
+namespace BakaBack.Domain.Models
 {
     public class Bet
     {
         public int Id { get; set; }
-        public string UserId { get; private set; }
-        public string EventId { get; private set; }
-        public decimal Amount { get; private set; }
-        public DateTime DatePlaced { get; private set; }
-        public decimal Odd { get; private set; }
+        public string UserId { get; set; }
+        public string EventId { get; set; }
+        public decimal Amount { get; set; }
+        public DateTime DatePlaced { get; set; }
+        public decimal Odd { get; set; }
         public bool IsWon { get; set; }
-
-        public Bet(string userId, string eventId, decimal amount)
-        {
-            ValidateBet(amount);
-            UserId = userId;
-            EventId = eventId;
-            Amount = amount;
-            DatePlaced = DateTime.Now;
-            IsWon = false;
-        }
+        public string Team { get; set; }
 
         private void ValidateBet(decimal amount)
         {

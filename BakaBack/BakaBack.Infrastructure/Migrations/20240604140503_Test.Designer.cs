@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakaBack.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240604101938_oc")]
-    partial class oc
+    [Migration("20240604140503_Test")]
+    partial class Test
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,10 @@ namespace BakaBack.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Odd")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Team")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UserId")

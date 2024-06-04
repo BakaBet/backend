@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using BakaBack.Api.Models;
+using BakaBack.API.DTO;
 
 namespace BakaBack.API.Controllers
 {
@@ -19,12 +21,14 @@ namespace BakaBack.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Bet>> PlaceBet([FromBody] Bet bet)
+        public async Task<ActionResult<Bet>> PlaceBet([FromBody] BetDto bet)
         {
             try
             {
-                var placedBet = await _betService.PlaceBetAsync(bet);
-                return Ok(placedBet);
+                var result = await _betService.PlaceBetAsync(
+                    new Bet { UserId = bet.UserId, EventId = bet.EventId, 
+                    Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false });
+                return Ok(bet);
             }
             catch (Exception ex)
             {
@@ -37,8 +41,8 @@ namespace BakaBack.API.Controllers
         {
             try
             {
-                var bets = await _betService.GetUserBetsAsync(user_id);
-                return Ok(bets);
+                var userBets = await _betService.GetUserBetsAsync(user_id);
+                return Ok(userBets);
             }
             catch (Exception ex)
             {
