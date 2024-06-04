@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "t7iL7Hcziq2OkSJaFNbJoEgVZWPe/HRByL3DO0VVpFkrHWts4S1WkbOPCwbYNYQyT3ipOcMHjjZGY68tw7/P5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\duver\\Desktop\\BakaBet\\backend\\backend\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
+=======
+  "dgSpecHash": "nNE2xMoY9s18svK2fjIJdIQaJ6cphgIi0R/e2jSx9C7xizTeuMvTEBnQxyqrpJnnyIt/3H5NdQsiU6MNIzPGpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Projet\\backend\\BakaBack\\BakaBack.Domain\\BakaBack.Domain.csproj",
+>>>>>>> f9041154728d5071814889aa059f002d03e5d81b
   "expectedPackageFiles": [],
   "logs": []
 }

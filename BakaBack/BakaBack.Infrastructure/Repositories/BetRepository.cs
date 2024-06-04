@@ -51,6 +51,20 @@ namespace BakaBack.Infrastructure.Repositories
             }
         }
 
+        public async Task<IEnumerable<Bet>> GetBetsByEventIdAsync(string event_id)
+        {
+            try
+            {
+                return await _context.Bets
+                    .Where(b => b.EventId == event_id)
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to retrieve bets by event ID.", ex);
+            }
+        }
+
         public async Task<IEnumerable<Bet>> GetAllActiveBetsAsync()
         {
             try

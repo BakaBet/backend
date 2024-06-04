@@ -23,12 +23,12 @@ namespace BakaBack.Domain.Services
             return await _eventRepository.GetSportsEventByIdAsync(eventId);
         }
 
-        public async Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal value)
+        public async Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal? value)
         {
             return await _eventRepository.UpdateHomeOutcomeAsync(eventId, value);
         }
 
-        public async Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal value)
+        public async Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal? value)
         {
             return await _eventRepository.UpdateAwayOutcomeAsync(eventId, value);
         }

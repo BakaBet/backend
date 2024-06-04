@@ -6,7 +6,7 @@ namespace BakaBack.Domain.Interfaces
     {
         Task<IEnumerable<SportEvent>> GetSportsEventsAsync();
         Task<SportEvent> GetSportsEventByIdAsync(string eventId);
-        Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal value);
-        Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal value);
+        Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal? value);
+        Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal? value);
     }
 }

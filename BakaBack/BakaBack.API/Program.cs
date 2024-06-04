@@ -54,6 +54,7 @@ builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IBetRepository, BetRepository>();
 
+builder.Services.AddScoped<IOddsService, OddsService>();
 builder.Services.AddScoped<SportsOddsService>();
 builder.Services.AddScoped<IBetService, BetService>();
 builder.Services.AddScoped<IUserService, UserService>();

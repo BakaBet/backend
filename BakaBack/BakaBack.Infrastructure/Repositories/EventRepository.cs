@@ -44,7 +44,7 @@ namespace BakaBack.Infrastructure.Repositories
             }
         }
 
-        public async Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal newOdds)
+        public async Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal? newOdds)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace BakaBack.Infrastructure.Repositories
             }
         }
 
-        public async Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal newOdds)
+        public async Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal? newOdds)
         {
             try
             {
