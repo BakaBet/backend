@@ -23,13 +23,7 @@ namespace BakaBack.Infrastructure.Contexts
 
             modelBuilder.Entity<SportEvent>()
                 .HasMany(e => e.Outcomes)
-                .WithOne(o => o.SportEvent)
-                .HasForeignKey(o => o.EventId);
-
-            // Define the relationship between Outcome and SportEvent
-            modelBuilder.Entity<Outcome>()
-                .HasOne(o => o.SportEvent)
-                .WithMany(e => e.Outcomes)
+                .WithOne()
                 .HasForeignKey(o => o.EventId);
         }
     }

@@ -325,13 +325,11 @@ namespace BakaBack.Infrastructure.Migrations
 
             modelBuilder.Entity("BakaBack.Domain.Models.Outcome", b =>
                 {
-                    b.HasOne("BakaBack.Domain.Models.SportEvent", "SportEvent")
+                    b.HasOne("BakaBack.Domain.Models.SportEvent", null)
                         .WithMany("Outcomes")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("SportEvent");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakaBack.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240603200307_Test")]
+    [Migration("20240604083347_Test")]
     partial class Test
     {
         /// <inheritdoc />
@@ -328,13 +328,11 @@ namespace BakaBack.Infrastructure.Migrations
 
             modelBuilder.Entity("BakaBack.Domain.Models.Outcome", b =>
                 {
-                    b.HasOne("BakaBack.Domain.Models.SportEvent", "SportEvent")
+                    b.HasOne("BakaBack.Domain.Models.SportEvent", null)
                         .WithMany("Outcomes")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("SportEvent");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

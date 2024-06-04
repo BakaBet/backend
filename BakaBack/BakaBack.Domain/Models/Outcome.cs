@@ -8,8 +8,5 @@ namespace BakaBack.Domain.Models
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string EventId { get; set; }
-
-        [JsonIgnore]
-        public SportEvent SportEvent { get; set; }
     }
 }
