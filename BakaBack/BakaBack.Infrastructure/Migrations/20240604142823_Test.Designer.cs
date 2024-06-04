@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakaBack.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240604122605_lc")]
-    partial class lc
+    [Migration("20240604142823_Test")]
+    partial class Test
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,6 +45,10 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<decimal>("Odd")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Team")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -54,43 +58,6 @@ namespace BakaBack.Infrastructure.Migrations
                     b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Bets");
-                });
-
-            modelBuilder.Entity("BakaBack.Domain.Models.Participation", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Stake")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Id")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("LifeBetId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<decimal>("Odds")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("UserId", "Stake");
-
-                    b.HasIndex("LifeBetId");
-
-                    b.ToTable("Participations");
-                });
-
-            modelBuilder.Entity("BakaBack.Domain.Models.Proposal", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("EventId")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("UserId", "EventId");
-
-                    b.ToTable("Proposals");
                 });
 
             modelBuilder.Entity("BakaBack.Domain.Models.SportEvent", b =>
@@ -201,27 +168,6 @@ namespace BakaBack.Infrastructure.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("LifeBet", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ProposalEventId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ProposalUserId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProposalUserId", "ProposalEventId");
-
-                    b.ToTable("LifeBets");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -359,24 +305,6 @@ namespace BakaBack.Infrastructure.Migrations
                         .HasForeignKey("ApplicationUserId");
                 });
 
-            modelBuilder.Entity("BakaBack.Domain.Models.Participation", b =>
-                {
-                    b.HasOne("LifeBet", null)
-                        .WithMany("Participants")
-                        .HasForeignKey("LifeBetId");
-                });
-
-            modelBuilder.Entity("LifeBet", b =>
-                {
-                    b.HasOne("BakaBack.Domain.Models.Proposal", "Proposal")
-                        .WithMany()
-                        .HasForeignKey("ProposalUserId", "ProposalEventId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Proposal");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -431,11 +359,6 @@ namespace BakaBack.Infrastructure.Migrations
             modelBuilder.Entity("BakaBack.Infrastructure.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Bets");
-                });
-
-            modelBuilder.Entity("LifeBet", b =>
-                {
-                    b.Navigation("Participants");
                 });
 #pragma warning restore 612, 618
         }

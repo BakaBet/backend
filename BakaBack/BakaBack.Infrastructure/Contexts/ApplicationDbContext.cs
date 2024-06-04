@@ -20,14 +20,14 @@ namespace BakaBack.Infrastructure.Contexts
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<LifeBet>()
+           /* modelBuilder.Entity<LifeBet>()
                 .HasKey(lb => lb.Id);
 
             modelBuilder.Entity<Proposal>()
                 .HasKey(p => new { p.UserId, p.EventId });
 
             modelBuilder.Entity<Participation>()
-                .HasKey(p => new { p.UserId, p.Stake });
+                .HasKey(p => new { p.UserId, p.Stake });*/
         }
     }
 }
