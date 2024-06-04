@@ -3,6 +3,7 @@ using System;
 using BakaBack.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakaBack.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240604115514_lb")]
+    partial class lb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.5");
@@ -42,10 +45,6 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<decimal>("Odd")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Team")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -57,15 +56,21 @@ namespace BakaBack.Infrastructure.Migrations
                     b.ToTable("Bets");
                 });
 
+            modelBuilder.Entity("BakaBack.Domain.Models.LifeBet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LifeBets");
+                });
+
             modelBuilder.Entity("BakaBack.Domain.Models.Participation", b =>
                 {
-                    b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Stake")
-                        .HasColumnType("TEXT");
-
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("LifeBetId")
@@ -74,24 +79,18 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<decimal>("Odds")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("UserId", "Stake");
+                    b.Property<decimal>("Stake")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("LifeBetId");
 
                     b.ToTable("Participations");
-                });
-
-            modelBuilder.Entity("BakaBack.Domain.Models.Proposal", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("EventId")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("UserId", "EventId");
-
-                    b.ToTable("Proposals");
                 });
 
             modelBuilder.Entity("BakaBack.Domain.Models.SportEvent", b =>
@@ -202,27 +201,6 @@ namespace BakaBack.Infrastructure.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("LifeBet", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ProposalEventId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ProposalUserId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProposalUserId", "ProposalEventId");
-
-                    b.ToTable("LifeBets");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -362,20 +340,9 @@ namespace BakaBack.Infrastructure.Migrations
 
             modelBuilder.Entity("BakaBack.Domain.Models.Participation", b =>
                 {
-                    b.HasOne("LifeBet", null)
+                    b.HasOne("BakaBack.Domain.Models.LifeBet", null)
                         .WithMany("Participants")
                         .HasForeignKey("LifeBetId");
-                });
-
-            modelBuilder.Entity("LifeBet", b =>
-                {
-                    b.HasOne("BakaBack.Domain.Models.Proposal", "Proposal")
-                        .WithMany()
-                        .HasForeignKey("ProposalUserId", "ProposalEventId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Proposal");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -429,14 +396,14 @@ namespace BakaBack.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("BakaBack.Domain.Models.LifeBet", b =>
+                {
+                    b.Navigation("Participants");
+                });
+
             modelBuilder.Entity("BakaBack.Infrastructure.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Bets");
-                });
-
-            modelBuilder.Entity("LifeBet", b =>
-                {
-                    b.Navigation("Participants");
                 });
 #pragma warning restore 612, 618
         }
