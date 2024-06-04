@@ -22,6 +22,12 @@ namespace BakaBack.Infrastructure.Repositories
             if (bet == null)
                 throw new ArgumentNullException(nameof(bet));
 
+            var sportEvent = await _context.SportEvents.FindAsync(bet.EventId);
+            if (sportEvent == null)
+            {
+                throw new Exception("SportEvent not found.");
+            }
+
             try
             {
                 _context.Bets.Add(bet);

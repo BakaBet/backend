@@ -1,15 +1,21 @@
-﻿using System.Text.Json.Serialization;
-
-namespace BakaBack.Domain.Models
+﻿namespace BakaBack.Domain.Models
 {
     public class Outcome
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public string EventId { get; set; }
+        public decimal Odds { get; set; }
 
-        [JsonIgnore]
-        public SportEvent SportEvent { get; set; }
+        public Outcome(decimal odds)
+        {
+            ValidateOdds(odds);
+            Odds = odds;
+        }
+
+        private void ValidateOdds(decimal odds)
+        {
+            if (odds <= 0)
+            {
+                throw new ArgumentException("Odds must be positive");
+            }
+        }
     }
 }

@@ -32,11 +32,14 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<DateTime>("DatePlaced")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("EventId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<bool>("IsWon")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("MatchId")
-                        .IsRequired()
+                    b.Property<decimal>("Odd")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UserId")
@@ -47,33 +50,7 @@ namespace BakaBack.Infrastructure.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.HasIndex("MatchId");
-
                     b.ToTable("Bets");
-                });
-
-            modelBuilder.Entity("BakaBack.Domain.Models.Outcome", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("EventId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EventId");
-
-                    b.ToTable("Outcomes");
                 });
 
             modelBuilder.Entity("BakaBack.Domain.Models.SportEvent", b =>
@@ -81,11 +58,17 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal?>("AwayOutcome")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("AwayTeam")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CommenceTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal?>("HomeOutcome")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("HomeTeam")
@@ -313,25 +296,6 @@ namespace BakaBack.Infrastructure.Migrations
                     b.HasOne("BakaBack.Infrastructure.Models.ApplicationUser", null)
                         .WithMany("Bets")
                         .HasForeignKey("ApplicationUserId");
-
-                    b.HasOne("BakaBack.Domain.Models.SportEvent", "Match")
-                        .WithMany()
-                        .HasForeignKey("MatchId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Match");
-                });
-
-            modelBuilder.Entity("BakaBack.Domain.Models.Outcome", b =>
-                {
-                    b.HasOne("BakaBack.Domain.Models.SportEvent", "SportEvent")
-                        .WithMany("Outcomes")
-                        .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("SportEvent");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -383,11 +347,6 @@ namespace BakaBack.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("BakaBack.Domain.Models.SportEvent", b =>
-                {
-                    b.Navigation("Outcomes");
                 });
 
             modelBuilder.Entity("BakaBack.Infrastructure.Models.ApplicationUser", b =>

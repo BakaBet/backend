@@ -2,6 +2,8 @@
 using Newtonsoft.Json.Linq;
 using BakaBack.Infrastructure.Contexts;
 using Microsoft.Extensions.Configuration;
+using System.Xml.Linq;
+using System.Diagnostics;
 
 namespace BakaBack.In.Services
 {
@@ -51,34 +53,29 @@ namespace BakaBack.In.Services
 
                 foreach (var match in matches)
                 {
-                    SportEvent newMatch = new SportEvent
-                    {
-                        Id = match["id"].ToString(),
-                        SportKey = match["sport_key"].ToString(),
-                        SportTitle = match["sport_title"].ToString(),
-                        CommenceTime = DateTime.Parse(match["commence_time"].ToString()),
-                        HomeTeam = match["home_team"].ToString(),
-                        AwayTeam = match["away_team"].ToString(),
-                        Outcomes = new List<Outcome>()
-                    };
-
+                    var Id = match["id"].ToString();
+                    var SportKey = match["sport_key"].ToString();
+                    var SportTitle = match["sport_title"].ToString();
+                    var CommenceTime = DateTime.Parse(match["commence_time"].ToString());
+                    var HomeTeam = match["home_team"].ToString();
+                    var AwayTeam = match["away_team"].ToString();
+                    decimal? HomeOutcome = null;
+                    decimal? AwayOutcome = null;
+                    
                     if (match["bookmakers"] != null && match["bookmakers"].Count() > 0 && match["bookmakers"][0]["markets"] != null && match["bookmakers"][0]["markets"].Count() > 0 && match["bookmakers"][0]["markets"][0]["outcomes"] != null)
                     {
-                        var MatchOutcomes = match["bookmakers"][0]["markets"][0]["outcomes"];
-                        foreach (var outcome in MatchOutcomes)
-                        {
-                            newMatch.Outcomes.Add(new Outcome
-                            {
-                                Name = outcome["name"].ToString(),
-                                Price = decimal.Parse(outcome["price"].ToString())
-                            });
-                        }
+                        HomeOutcome = decimal.Parse(match["bookmakers"][0]["markets"][0]["outcomes"][0]["price"].ToString());
+                        AwayOutcome = decimal.Parse(match["bookmakers"][0]["markets"][0]["outcomes"][1]["price"].ToString());
                     }
+
+
+
+                    SportEvent newMatch = new SportEvent(Id,SportKey, SportTitle, CommenceTime, HomeTeam, AwayTeam , HomeOutcome, AwayOutcome);
 
                     _dbContext.SportEvents.Add(newMatch);
                 }
             }
-            //await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

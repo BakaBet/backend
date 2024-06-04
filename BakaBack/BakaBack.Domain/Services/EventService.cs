@@ -1,8 +1,5 @@
 ﻿using BakaBack.Domain.Interfaces;
 using BakaBack.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 
 namespace BakaBack.Domain.Services
@@ -26,14 +23,14 @@ namespace BakaBack.Domain.Services
             return await _eventRepository.GetSportsEventByIdAsync(eventId);
         }
 
-        public async Task<IEnumerable<Outcome>> GetOddsByEventIdAsync(string eventId)
+        public async Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal value)
         {
-            return await _eventRepository.GetOddsByEventIdAsync(eventId);
+            return await _eventRepository.UpdateHomeOutcomeAsync(eventId, value);
         }
 
-        public async Task<bool> UpdateOddsAsync(string eventId, string betOption, decimal newOdds)
+        public async Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal value)
         {
-            return await _eventRepository.UpdateOddsAsync(eventId, betOption, newOdds);
+            return await _eventRepository.UpdateAwayOutcomeAsync(eventId, value);
         }
     }
 }

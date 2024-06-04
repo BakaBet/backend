@@ -37,29 +37,5 @@ namespace BakaBack.API.Controllers
             }
             return Ok(sportEvent);
         }
-
-        // GET /events/sports/{event_id}/odds
-        [HttpGet("sports/{event_id}/odds")]
-        public async Task<ActionResult<Outcome>> GetOdds(string event_id)
-        {
-            var odds = await _eventService.GetOddsByEventIdAsync(event_id);
-            if (odds == null)
-            {
-                return NotFound();
-            }
-            return Ok(odds);
-        }
-
-        // PUT /events/sports/{event_id}/odds
-        [HttpPut("sports/{event_id}/odds")]
-        public async Task<IActionResult> UpdateOdds(string event_id, [FromBody] OddsUpdateRequest request)
-        {
-            var success = await _eventService.UpdateOddsAsync(event_id, request.BetOption, request.NewOdds);
-            if (!success)
-            {
-                return BadRequest();
-            }
-            return NoContent();
-        }
     }
 }

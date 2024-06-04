@@ -18,7 +18,9 @@ namespace BakaBack.Infrastructure.Repositories
         {
             try
             {
-                var events = await _context.SportEvents.Include(e=>e.Outcomes).ToListAsync();
+                var events = await _context.SportEvents
+                    .ToListAsync();
+
                 return events;
             }
             catch (Exception ex)
@@ -31,7 +33,9 @@ namespace BakaBack.Infrastructure.Repositories
         {
             try
             {
-                var sportEvent = await _context.SportEvents.FindAsync(eventId);
+                var sportEvent = await _context.SportEvents
+                    .FirstOrDefaultAsync(e => e.Id == eventId);
+
                 return sportEvent;
             }
             catch (Exception ex)
@@ -40,43 +44,47 @@ namespace BakaBack.Infrastructure.Repositories
             }
         }
 
-        public async Task<IEnumerable<Outcome>> GetOddsByEventIdAsync(string eventId)
+        public async Task<bool> UpdateHomeOutcomeAsync(string eventId, decimal newOdds)
         {
             try
             {
-                var odds = await _context.Outcomes
-                    .Where(o => o.EventId == eventId)
-                    .ToListAsync();
-                return odds;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Failed to retrieve odds by event ID.", ex);
-            }
-        }
+                var sportEvent = await _context.SportEvents
+                    .FirstOrDefaultAsync(e => e.Id == eventId);
 
-        public async Task<bool> UpdateOddsAsync(string eventId, string outcomeName, decimal newOdds)
-        {
-            try
-            {
-                var outcome = await _context.Outcomes
-                    .Where(o => o.EventId == eventId && o.Name == outcomeName)
-                    .FirstOrDefaultAsync();
-
-                if (outcome != null)
-                {
-                    outcome.Price = newOdds;
-                    await _context.SaveChangesAsync();
-                    return true;
-                }
-                else
+                if (sportEvent == null || sportEvent.HomeOutcome == null)
                 {
                     return false;
                 }
+
+                sportEvent.HomeOutcome = newOdds;
+                await _context.SaveChangesAsync();
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception("Failed to update odds.", ex);
+                throw new Exception("Failed to update home outcome.", ex);
+            }
+        }
+
+        public async Task<bool> UpdateAwayOutcomeAsync(string eventId, decimal newOdds)
+        {
+            try
+            {
+                var sportEvent = await _context.SportEvents
+                    .FirstOrDefaultAsync(e => e.Id == eventId);
+
+                if (sportEvent == null || sportEvent.AwayOutcome == null)
+                {
+                    return false;
+                }
+
+                sportEvent.AwayOutcome = newOdds;
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to update away outcome.", ex);
             }
         }
     }
