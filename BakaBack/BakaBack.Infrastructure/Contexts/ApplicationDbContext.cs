@@ -19,23 +19,6 @@ namespace BakaBack.Infrastructure.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<SportEvent>()
-                .HasMany(e => e.Outcomes)
-                .WithOne(o => o.SportEvent)
-                .HasForeignKey(o => o.EventId);
-
-            // Define the relationship between Outcome and SportEvent
-            modelBuilder.Entity<Outcome>()
-                .HasOne(o => o.SportEvent)
-                .WithMany(e => e.Outcomes)
-                .HasForeignKey(o => o.EventId);
-
-            // Define the relationship between Outcome and SportEvent
-            modelBuilder.Entity<Outcome>()
-                .HasOne(o => o.SportEvent)
-                .WithMany(e => e.Outcomes)
-                .HasForeignKey(o => o.EventId);
         }
     }
 }
