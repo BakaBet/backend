@@ -14,5 +14,7 @@ namespace BakaBack.Domain.Interfaces
         Task<decimal?> GetUserBalanceAsync(string userId);
         Task<IEnumerable<Bet>> GetUserBetHistoryAsync(string userId);
         Task<bool> UpdateUserAsync(string userId, string firstName, string lastName, string email);
+
+        Task<bool> SubtractCoinsAsync(string userId, decimal amount);
     }
 }

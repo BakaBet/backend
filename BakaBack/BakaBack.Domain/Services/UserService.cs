@@ -71,5 +71,17 @@ namespace BakaBack.Domain.Services
                 throw new Exception("Failed to update user.", ex);
             }
         }
+
+        public async Task<bool> SubtractCoinsAsync(string userId, decimal amount)
+        {
+            try
+            {
+                return await _userRepository.SubtractCoinsAsync(userId, amount);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to subtract coins from user.", ex);
+            }
+        }
     }
 }

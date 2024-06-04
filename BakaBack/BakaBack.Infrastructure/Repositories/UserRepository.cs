@@ -95,5 +95,25 @@ namespace BakaBack.Infrastructure.Repositories
                 throw new Exception("Failed to update user.", ex);
             }
         }
+        public async Task<bool> SubtractCoinsAsync(string userId, decimal amount)
+        {
+            try
+            {
+                var user = await _context.Users.FindAsync(userId);
+                if (user == null)
+                    return false;
+
+                if (user.Coins < amount)
+                    return false;
+
+                user.Coins -= amount;
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to subtract coins from user.", ex);
+            }
+        }
     }
 }

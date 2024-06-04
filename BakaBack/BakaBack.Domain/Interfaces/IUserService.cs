@@ -9,5 +9,7 @@ namespace BakaBack.Domain.Interfaces
         Task<bool> AddBonusAsync(string userId, decimal bonusAmount);
         Task<decimal> GetUserBalanceAsync(string userId);
         Task<IEnumerable<Bet>> GetUserBetHistoryAsync(string userId);
+
+        Task<bool> SubtractCoinsAsync(string userId, decimal amount);
     }
 }
