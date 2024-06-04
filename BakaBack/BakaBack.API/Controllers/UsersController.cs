@@ -40,6 +40,27 @@ namespace BakaBack.API.Controllers
             }
         }
 
+        [HttpPost("{user_id}/substract")]
+        public async Task<IActionResult> SubstractBalance(string user_id, decimal amount)
+        {
+            try
+            {
+                var success = await _userService.SubtractCoinsAsync(user_id, amount);
+                if (success)
+                {
+                    return NoContent();
+                }
+                else
+                {
+                    return BadRequest("Failed to substract coins.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
         [HttpGet("{user_id}")]
         public async Task<IActionResult> GetUser(string user_id)
