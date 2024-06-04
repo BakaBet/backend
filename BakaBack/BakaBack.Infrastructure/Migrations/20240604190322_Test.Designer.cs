@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakaBack.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240604142823_Test")]
+    [Migration("20240604190322_Test")]
     partial class Test
     {
         /// <inheritdoc />

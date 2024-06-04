@@ -14,10 +14,12 @@ namespace BakaBack.API.Controllers
     public class BetController : ControllerBase
     {
         private readonly IBetService _betService;
+        private readonly IOddsService _oddsService;
 
-        public BetController(IBetService betService)
+        public BetController(IBetService betService, IOddsService oddsService)
         {
             _betService = betService;
+            _oddsService = oddsService;
         }
 
         [HttpPost]
@@ -28,6 +30,7 @@ namespace BakaBack.API.Controllers
                 var result = await _betService.PlaceBetAsync(
                     new Bet { UserId = bet.UserId, EventId = bet.EventId, 
                     Amount = bet.Amount, Team = bet.Team, DatePlaced = DateTime.Now, IsWon = false });
+                await _oddsService.UpdateOddsAsync(bet.EventId);
                 return Ok(bet);
             }
             catch (Exception ex)
