@@ -7,5 +7,6 @@ namespace BakaBack.Domain.Interfaces
         Task<Bet> PlaceBetAsync(Bet bet);
         Task<IEnumerable<Bet>> GetUserBetsAsync(string user_id);
         Task<IEnumerable<Bet>> GetBetsByEventIdAsync(string event_id);
+        Task CheckAndEndBetsAsync();
     }
 }

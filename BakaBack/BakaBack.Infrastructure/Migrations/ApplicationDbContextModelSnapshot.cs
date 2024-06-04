@@ -32,9 +32,18 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<DateTime>("DatePlaced")
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("EndTime")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("EventId")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<decimal?>("Gains")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsEnded")
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsWon")
                         .HasColumnType("INTEGER");
@@ -78,6 +87,9 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<string>("HomeTeam")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsFinished")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("SportKey")
                         .IsRequired()

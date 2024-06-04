@@ -64,7 +64,8 @@ namespace BakaBack.Infrastructure.Migrations
                     HomeTeam = table.Column<string>(type: "TEXT", nullable: false),
                     AwayTeam = table.Column<string>(type: "TEXT", nullable: false),
                     HomeOutcome = table.Column<decimal>(type: "TEXT", nullable: true),
-                    AwayOutcome = table.Column<decimal>(type: "TEXT", nullable: true)
+                    AwayOutcome = table.Column<decimal>(type: "TEXT", nullable: true),
+                    IsFinished = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -190,6 +191,9 @@ namespace BakaBack.Infrastructure.Migrations
                     Odd = table.Column<decimal>(type: "TEXT", nullable: false),
                     IsWon = table.Column<bool>(type: "INTEGER", nullable: false),
                     Team = table.Column<string>(type: "TEXT", nullable: false),
+                    EndTime = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    IsEnded = table.Column<bool>(type: "INTEGER", nullable: false),
+                    Gains = table.Column<decimal>(type: "TEXT", nullable: true),
                     ApplicationUserId = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakaBack.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240604190322_Test")]
+    [Migration("20240604192621_Test")]
     partial class Test
     {
         /// <inheritdoc />
@@ -35,9 +35,18 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<DateTime>("DatePlaced")
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("EndTime")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("EventId")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<decimal?>("Gains")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsEnded")
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsWon")
                         .HasColumnType("INTEGER");
@@ -81,6 +90,9 @@ namespace BakaBack.Infrastructure.Migrations
                     b.Property<string>("HomeTeam")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsFinished")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("SportKey")
                         .IsRequired()
